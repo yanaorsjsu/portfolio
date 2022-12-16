@@ -1,1 +1,329 @@
+<html>
+<head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/index.css">
 
+    <script src="https://kit.fontawesome.com/1c3b2e895a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    <link rel="icon" href="/assets/Portfolio Icon.jfif">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+body,
+html {
+    background-color: #111111;
+    color: white;
+    height: 100%; 
+}
+
+/* HEADINGS */ 
+#main-heading {
+    border-top: solid;
+}
+
+#about-me h1 {
+    font-family: 'Hammersmith One', sans-serif;
+}
+
+#second-heading {
+    font-family: monospace;
+    font-size: 25px;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#second-heading:before,
+#second-heading:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+#second-heading:after {
+    margin: 0 0 0 20px;
+}
+
+#third-heading h1 {
+    max-width: 1034px;
+    display: flex;
+    font-size: 25px;
+    font-family: monospace;
+    width: 100%;
+    margin-top: 30px
+}
+
+
+#third-heading h1:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+#third-heading h1:after {
+    margin: 15px 0 0 10px;
+}
+
+/* ---------------------------------- */
+
+/* EFFECTS */
+
+.gray-text {
+    color: gray;
+}
+
+.gradiant-effect {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 6rem;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.hue-bold {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+/*---------------------------------------------------------*/
+
+/* OTHER */
+
+#main-box {
+    margin: 0 auto;
+    width: 90%;
+    padding-top: 20px;
+}
+
+#about-me .name-heading {
+    max-width: 50rem;
+}
+
+#about-me div div img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 5rem;
+    border: 3px solid;
+}
+
+.skills-icon {
+    font-size: 3rem;
+    color: gray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all .3s;
+}
+
+.skills-icon:hover {
+    transform: scale(1.1);
+    color: #02aab0;
+    background-image: -webkit-linear-gradient(92deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+  
+.tippy-box[data-theme~='gradiant'] {
+    color: white;
+    background-color: transparent;
+    opacity: 0.7;
+}
+
+.card {
+    border-radius: 5px;
+    background-color: #181818;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  cursor: pointer;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+    background-image: -webkit-linear-gradient(92deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+.card-text {
+    color: gray;
+}
+
+/* -------------------------- */
+
+/* ALL LINKS */
+
+a{
+    text-decoration:none;
+}
+
+/* -------------------------- */
+
+/* CONNECT WITH ME */
+
+#connect {
+    font-family: monospace;
+    font-size: 25px;
+    display: flex;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#connect:before,
+#connect:after {
+    content: '';
+    border-top: 2px solid;
+    margin: 0 20px 0 0;
+    flex: 1 0 20px;
+}
+
+#connect:after {
+    margin: 0 0 0 20px;
+}
+
+.connect-elements{
+    font-size: 3rem;
+    color: gray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: all .3s;
+}
+
+.connect-elements:hover {
+    transform: scale(1.1);
+    color: #02aab0;
+    background-image: -webkit-linear-gradient(92deg, #02aab0, #00cdac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+/* -------------------------- */
+
+/* FOOTER */
+
+.sticky__footer {
+    background-color: var(--darker-bg);
+    font-family: "Montserrat", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    color: #fff;
+  }
+
+/* -------------------------- */
+
+/* ANIMATION */
+
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+/* --------------- */
+    </style>
+</head>
+
+
+<body>
+    <!-- GRADIANT EFFECT ON TOP -->
+    <h1 id="main-heading" class="gradiant-effect"></h1>
+    <!-- MAIN DIVIDER WHICH CONTAINS ALL THE OTHER CATEGORY-->
+    <div id="main-box">
+        <!-- ABOUT ME SECTION -->
+        <div class="d-flex justify-content-center" id="about-me">
+            <div class="d-flex">
+                <div class="flex-shrink-0">
+                    <!-- IMAGE OF THE PERSON-->
+                    <img class="gradiant-effect" src="https://pa1.narvii.com/6735/49b2f942add222d22fb89dd6d364053268fd0c33_hq.gif">
+                </div>
+                <div class="flex-grow-1 ms-5 name-heading">
+                    <!-- NAME OF THE PERSON -->
+                    <h1>Portfolio</h1>
+                    <!-- ABOUT HIM -->
+                    <p class="gray-text">
+                       This is a page deidcated for my works that used Photoshop-
+this would include our first assignment and our meme mashup, as well as adding my logo piece <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-xxl gradiant-effect" style=" max-width: 1034px;" id="third-heading">
+            <h1>photoshop</h1>
+        </div>
+
+        <!-- PROJECT THAT HE OWNS -->
+        <div class="container-xxl" style="max-width: 1034px;" id="projects">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+
+                <div class="col">
+                    <div class="card mb-3 h-100" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <a href="" target="_blank"
+                                rel="noopener noreferrer">
+                                <h5 class="card-title"><>
+                                   </h5>
+                                <p class="card-text">https://yanaorsjsu.github.io/website/index</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+        <br>
+            </a>
+        </div>
+        <br>
+        </footer>
+
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+        <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+        <div class="elfsight-app-4fd6d63f-c493-4a30-8558-af66a359e9ef" align="center"></div>
+
+        <script>
+            tippy('[data-tippy-content]', {
+                arrow: false,
+                inertia: true,
+                animation: 'scale',
+                theme: 'gradiant',
+                placement: 'bottom',
+            });
+        </script>
+
+
+</body>
+
+</html>
